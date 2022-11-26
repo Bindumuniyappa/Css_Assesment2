@@ -1,0 +1,180 @@
+.top-section{
+    width:150vw;
+    height: 100px;
+    background-color: burlywood;
+    position: relative;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    background-image: url("logoPrepBytes.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 500px;
+    list-style: none;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+
+}
+.button{
+    width: 100px;
+    height: 40px;
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+.main-container{
+    width: auto;
+    height: 1000px;
+    position: relative;
+    top: -22px;
+     background-image: linear-gradient(lightblue,pink);
+}
+#text{
+    font-size: 15px;
+    font-weight: bold;
+}
+.transitions{
+    position: relative;
+    
+}
+#linear{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    line-height: 100px;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s linear;
+    animation: linearBox 3s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes linearBox {
+    from{
+        left: 0px;
+        animation-timing-function: linear;
+
+    }
+    to{
+        left: 300px;
+    }
+}
+#ease {
+    width: 200px;
+    height: 100px;
+    background-color:red;
+    line-height: 100px;
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s linear;
+    animation: easeBox 3s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes easeBox {
+    from {
+        left: 0px;
+        animation-timing-function: ease;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+#ease-in {
+    width: 200px;
+    height: 100px;
+    background-color:green;
+    line-height: 100px;
+    position: absolute;
+    top: 220px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s linear;
+    animation: ease-inBox 3s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes ease-inBox {
+    from {
+        left: 0px;
+        animation-timing-function: ease-in;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+#ease-out {
+    width: 200px;
+    height: 100px;
+    background-color:red;
+    line-height: 100px;
+    position: absolute;
+    top: 330px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s linear;
+    animation: ease-outBox 3s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes ease-outBox {
+    from {
+        left: 0px;
+        animation-timing-function: ease-out;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+#ease-in-out {
+    width: 200px;
+    height: 100px;
+    background-color:green;
+    line-height: 100px;
+    position: absolute;
+    top: 440px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 3s linear;
+    animation: ease-in-outBox 3s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes ease-in-outBox {
+    from {
+        left: 0px;
+        animation-timing-function: ease-in-out;
+    }
+
+    to {
+        left: 300px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:700px) {
+    .buttons{
+        top: 20px;
+        flex-wrap:wrap;
+    }
+    .button{
+        width: 50px;
+        height: 20px;
+        font-size: 8px;
+    }
+     
+}
